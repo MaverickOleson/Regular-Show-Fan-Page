@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Back{
+            width: 80px;
+            height: 35px;
+            float: left;
+            position: relative;
+            top: calc(50% - 20px);
+            background-color: blue;
+        }
+        .Forward{
+            width: 80px;
+            height: 35px;
+            float: right;
+            position: relative;
+            top: calc(50% - 20px);
+            background-color: blue;
+        }
+        div{
+            display: block;
+            width: 800px;
+            height: 340px;
+            position: relative;
+            top: 200px;
+        }
+        #img1{
+            width: calc(100% - 200px);
+            height: 100%;
+        }
+        #img2{
+            width: calc(100% - 200px);
+            height: 100%;
+        }
+        #img3{
+            width: calc(100% - 200px);
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+            <button class ="Back" onclick="back()">Back</button>
+            <button class ="Forward" onclick="forward()">Forward</button>
+            <img src="images/large house.jpg" id="img1">
+            <img src="images/shed.jpg"  id="img2">
+            <img src="images/medium1 house.jpeg"  id="img3">
+        </div>
+    </center>
+    <script>
+        document.getElementById('img1').style.visibility='visible';
+        document.getElementById('img2').style.visibility='hidden';
+        document.getElementById('img3').style.visibility='hidden';
+        var teller = document.getElementById('img1').style.visibility
+        function back(){
+            if(teller == 'visible'){
+                document.getElementById('img1').style.visibility = "hidden";
+                //document.pics[2].setAttribute("visibility", "visible");
+            }
+            /*
+            if(pics[1].style.visibility=='visible'){
+                document.pics[1].setAttribute("visibility", "hidden");
+                document.pics[0].setAttribute("visibility", "visible");
+            }
+            if(pics[2].style.visibility=='visible'){
+                document.pics[2].setAttribute("visibility", "hidden");
+                document.pics[1].setAttribute("visibility", "visible");
+            }
+            */
+        }
+    </script>
+</body>
+</html>
