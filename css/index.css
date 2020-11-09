@@ -19,8 +19,9 @@ body{
 }
 #container{
     display: grid;
-    grid-template-columns: 106px 50px 860px 50px 106px;
+    grid-template-columns: 100px 840px 100px;
     grid-template-rows: 520px;
+    column-gap: 50px;
     align-items: center;
     justify-items: center;
     vertical-align: middle;
@@ -34,22 +35,17 @@ body{
     background-color: blue;
     border: 3px solid black;
 }
-#none1{
-    display: none;
-    grid-column: 2;
-    grid-row: 1;
-}
 #view{
     width: 840px;
     height: 500px;
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1;
     border: 10px solid black;
 }
 #img1{
     width: 840px;
     height: 500px;
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1;
     position: relative;
     top: 0;
@@ -57,7 +53,7 @@ body{
 #img2{
     width: 840px;
     height: 500px;
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1;
     position: absolute;
     top: 10px;
@@ -66,22 +62,17 @@ body{
 #img3{
     width: 840px;
     height: 500px;
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1;
     position: absolute;
     top: 10px;
     right: 160px;
 }
-#none2{
-    display: none;
-    grid-column: 4;
-    grid-row: 1;
-}
 #Next{
     float:right;
     width: 100px;
     height: 50px;
-    grid-column: 5;
+    grid-column: 3;
     grid-row: 1;
     background-color: blue;
     border: 3px solid black;
