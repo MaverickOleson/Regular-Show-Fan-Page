@@ -1,67 +1,88 @@
+@font-face{
+    src: url(../fonts/Cartoon\ Slam.ttf);
+    font-family: "Cartoon Slam";
+}
 body{
     background-image: url(../images/lightbackground.png);
+    background-size: auto;
+    font-family: Cartoon Slam;
 }
 #Enter{
     display: flex;
-    width: 7vw;
-    height: 7vh;
+    width: 150px;
+    height: 75px;
     align-items: center;
     justify-content: center;
     position: relative;
     top: 43vh;
-    border: 1vh solid black;
+    border: 8px solid black;
 }
 #container{
     display: grid;
-    grid-template-columns: 6vw 3vw 40vw 4vw 6vw;
+    grid-template-columns: 106px 50px 860px 50px 106px;
+    grid-template-rows: 520px;
     align-items: center;
-    position: absolute;
-    top: 20vh;
-    right: 22%;
-}
-#none1{
-    grid-column: 4;
+    justify-items: center;
+    vertical-align: middle;
 }
 #Back{
-    width: 6vw;
-    height: 5vh;
+    float:left;
+    width: 100px;
+    height: 50px;
     grid-column: 1;
+    grid-row: 1;
     background-color: blue;
-    border: 0.5vh solid black;
+    border: 3px solid black;
+}
+#none1{
+    display: none;
+    grid-column: 2;
+    grid-row: 1;
 }
 #view{
-    width: 40vw;
-    height: 100%;
+    width: 840px;
+    height: 500px;
     grid-column: 3;
-    border: 1vh solid black;
+    grid-row: 1;
+    border: 10px solid black;
 }
 #img1{
-    width: 100%;
-    height: 100%;
+    width: 840px;
+    height: 500px;
+    grid-column: 3;
+    grid-row: 1;
     position: relative;
     top: 0;
 }
 #img2{
-    width: 40vw;
-    height: 100%;
+    width: 840px;
+    height: 500px;
+    grid-column: 3;
+    grid-row: 1;
     position: absolute;
-    top: 0;
-    right: 16.1%;
+    top: 10px;
+    right: 160px;
 }
 #img3{
-    width: 40vw;
-    height: 100%;
+    width: 840px;
+    height: 500px;
+    grid-column: 3;
+    grid-row: 1;
     position: absolute;
-    top: 0;
-    right: 16.1%;
-}
-#Next{
-    width: 6vw;
-    height: 5vh;
-    grid-column: 5;
-    background-color: blue;
-    border: 0.5vh solid black;
+    top: 10px;
+    right: 160px;
 }
 #none2{
-    grid-column: 2;
+    display: none;
+    grid-column: 4;
+    grid-row: 1;
+}
+#Next{
+    float:right;
+    width: 100px;
+    height: 50px;
+    grid-column: 5;
+    grid-row: 1;
+    background-color: blue;
+    border: 3px solid black;
 }
