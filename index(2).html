@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <center>
-        <div id="div">
-            <button class="Back" onclick="back()">Back</button>
-            <button class="Forward" onclick="forward()">Forward</button>
+    <div id="container">
+        <div id="none1"></div>
+        <button id="Back" onclick="back()">Back</button>
+        <div id="view">
             <img src="images/large house.jpg" id="img1">
             <img src="images/shed.jpg" id="img2">
             <img src="images/medium1 house.jpeg" id="img3">
         </div>
-    </center>
-    <script src="index.js"></script>
+        <button id="Next" onclick="next()">Next</button>
+        <div id="none2"></div>
+    </div>
+    <script src="js/index.js"></script>
 </body>
 </html>

@@ -19,7 +19,7 @@ function back(){
         pic[0].style.visibility = 'visible';
     }
 }
-function forward(){
+function next(){
     if(pic[0].style.visibility == 'visible'){
         pic[0].style.visibility = 'hidden';
         pic[2].style.visibility = 'hidden';
