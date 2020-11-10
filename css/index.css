@@ -8,24 +8,69 @@ body{
     text-align: center;
     font-family: Cartoon Slam;
 }
+#dark-mode{
+    background-image: url(../images/darkbackground.png);
+    background-size: auto;
+    text-align: center;
+    font-family: Cartoon Slam;
+    color:white;
+}
 h2{
     position: relative;
     top: -0.5rem;
 }
-#switch{
-    width: 5rem;
-    height: 2.3rem;
-    background-color: lightgray;
-    border-radius: 2rem;
-}
-#circle{
-    width: 1.4rem;
-    height: 1.4rem;
-    background-color: white;
-    border-radius: 1rem;
+.switch{
     position: relative;
-    top:0;
-    left:0;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: lightgray;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + body{
+    background-image: url(../images/darkbackground.png);
+}
+input:checked + .slider{
+    background-color: darkgray;
+}
+input:focus + .slider{
+    box-shadow: 0 0 1px darkgray;
+}
+input:checked + .slider:before{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round{
+    border-radius: 34px;
+}
+.slider.round:before{
+    border-radius: 50%;
 }
 #header1{
     position: absolute;
@@ -61,6 +106,16 @@ h2{
     background-color: white;
     border: 0.3rem solid black;
 }
+#dark-modeBack{
+    width: 7rem;
+    height: 3rem;
+    position: absolute;
+    top: 24rem;
+    left: 24rem;
+    background-color:black;
+    border: 0.3rem solid white;
+    color: white;
+}
 #Next{
     width: 7rem;
     height: 3rem;
@@ -70,6 +125,16 @@ h2{
     background-color: white;
     border: 0.3rem solid black;
 }
+#dark-modeNext{
+    width: 7rem;
+    height: 3rem;
+    position: absolute;
+    top: 24rem;
+    right: 24rem;
+    background-color: black;
+    border: 0.3rem solid white;
+    color: white;
+}
 #Trivia{
     width: 7rem;
     height: 3rem;
@@ -78,6 +143,16 @@ h2{
     right: 24rem;
     background-color: blue;
     border: 0.3rem solid black;
+}
+#dark-modeTrivia{
+    width: 7rem;
+    height: 3rem;
+    position: absolute;
+    top: 24rem;
+    right: 24rem;
+    background-color: black;
+    border: 0.3rem solid blue; 
+    color: blue;
 }
 #border{
     width: 50rem;

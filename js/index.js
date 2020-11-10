@@ -1,13 +1,8 @@
-var id = setInterval(darkmode, 5);
 function darkmode(){
-    var mode = true;
-    if(mode === true){
-        clearInterval(id);
-        document.getElementById("switch").style.backgroundColor = "darkgray";
-    }
-    else{
-        document.getElementById("switch").style.backgroundColor = "darkgray";
-    }
+    document.body.id = "dark-mode";
+    document.getElementById("Next").id = 'dark-modeNext';
+    document.getElementById("Back").id = 'dark-modeBack';
+    document.getElementById("Trivia").id = 'dark-modeTrivia';
 }
 
 var header = [document.getElementById("header1"), document.getElementById("header2"), document.getElementById("header3"), document.getElementById("header4"), document.getElementById("header5")]
@@ -124,5 +119,37 @@ function visBack(){
     }
     else if(pic[0].style.visibility == 'visible'){
         document.getElementById("Back").style.visibility = 'hidden';
+    }
+}
+
+function darkVisNext(){
+    if(document.body.id == 'dark-mode'){
+        document.getElementById("dark-modeNext").id = 'dark-modeNext';
+        document.getElementById("dark-modeBack").id = 'dark-modeBack';
+        document.getElementById("dark-modeTrivia").id = 'dark-modeTrivia';
+        if(pic[0].style.visibility == 'visible'){
+            document.getElementById("dark-modeBack").style.visibility = 'hidden';
+        }
+        else{
+            document.getElementById("dark-modeBack").style.visibility = 'visible';
+        }
+        if(pic[4].style.visibility == 'visible'){
+            document.getElementById("dark-modeNext").style.visibility = 'hidden';
+            document.getElementById("dark-modeTrivia").style.visibility = 'visible';
+        }
+    }
+}
+function darkVisBack(){
+    if(document.body.id == 'dark-mode'){
+        document.getElementById("dark-modeNext").id = 'dark-modeNext';
+        document.getElementById("dark-modeBack").id = 'dark-modeBack';
+        document.getElementById("dark-modeTrivia").id = 'dark-modeTrivia';
+        if(pic[3].style.visibility == 'visible'){
+            document.getElementById("dark-modeNext").style.visibility = 'visible';
+            document.getElementById("dark-modeTrivia").style.visibility = 'hidden';
+        }
+        else if(pic[0].style.visibility == 'visible'){
+            document.getElementById("dark-modeBack").style.visibility = 'hidden';
+        }
     }
 }

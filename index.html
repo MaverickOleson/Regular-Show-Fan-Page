@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <button id="switch" onclick="darkmode()"><div id="circle"></div></button>
-    <button id="Back" onclick="back(), visBack()"><h2>Back</h2></button>
-    <button id="Next" onclick="next(), visNext()"><h2>Next</h2></button>
+    <label class="switch">
+        <input type="checkbox" onclick="darkmode()">
+        <span class="slider round"></span>
+    </label>
+    <button id="Back" onclick="back(), visBack(), darkVisBack()"><h2>Back</h2></button>
+    <button id="Next" onclick="next(), visNext(), darkVisNext()"><h2>Next</h2></button>
     <button id="Trivia" onclick="location.href='file:\/\/\/C:/Users/Eric/Desktop/Household-Items-Battle/index(2).html'"><h2>Trivia</h2></button>
     <h1 id="header1">Regular Show Fan Site</h1>
     <h1 id="header2">Main Characters</h1>
