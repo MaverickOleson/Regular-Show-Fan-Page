@@ -2,77 +2,150 @@
     src: url(../fonts/Cartoon\ Slam.ttf);
     font-family: "Cartoon Slam";
 }
-#Enter{
-    display: flex;
-    width: 150px;
-    height: 75px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 43vh;
-    border: 8px solid black;
-    }
 body{
-    background-image: url(../images/lightbackround.png);
+    background-image: url(../images/lightbackground.png);
     background-size: auto;
+    text-align: center;
     font-family: Cartoon Slam;
 }
-#header1{
-    color: black;
+h2{
     position: relative;
-    top: 0;
+    top: -0.5rem;
+}
+#switch{
+    width: 5rem;
+    height: 2.3rem;
+    background-color: lightgray;
+    border-radius: 2rem;
+}
+#circle{
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    top:0;
+    left:0;
+}
+#header1{
+    position: absolute;
+    top: 5rem;
+    right: 45.8rem;
 }
 #header2{
-    color: black;
-    position: relative;
-    top: -59px;
+    position: absolute;
+    top: 5rem;
+    right: 49.1rem;
 }
 #header3{
-    color: black;
-    position: relative;
-    top: -117px;
+    position: absolute;
+    top: 5rem;
+    right: 46.5rem;
+}
+#header4{
+    position: absolute;
+    top: 5rem;
+    right: 45.1rem;
+}
+#header5{
+    position: absolute;
+    top: 5rem;
+    right: 50.7rem;
 }
 #Back{
-    margin-top: 250px;
-    margin-left: 120px;
-    float: left;
-    width: 100px;
-    height: 50px;
-    grid-column: 1;
-    background-color: #0000ff;
-    border: 3px solid black;
+    width: 7rem;
+    height: 3rem;
+    position: absolute;
+    top: 24rem;
+    left: 24rem;
+    background-color: white;
+    border: 0.3rem solid black;
 }
 #Next{
-    margin-top: 250px;
-    margin-right: 120px;
-    float: right;
-    width: 100px;
-    height: 50px;
-    background-color: #0000ff;
-    border: 3px solid black;
+    width: 7rem;
+    height: 3rem;
+    position: absolute;
+    top: 24rem;
+    right: 24rem;
+    background-color: white;
+    border: 0.3rem solid black;
+}
+#Trivia{
+    width: 7rem;
+    height: 3rem;
+    position: absolute;
+    top: 24rem;
+    right: 24rem;
+    background-color: blue;
+    border: 0.3rem solid black;
 }
 #border{
-    width: 840px;
-    height: 500px;
-    border: 10px solid black;
-    position: relative;
-    top: -100px;
+    width: 50rem;
+    height: 30rem;
+    border: 0.5rem solid black;
+    position: absolute;
+    top: 10rem;
+    right: 34.5rem;
 }
 #img1{
-    width: 841px;
-    height: 501px;
-    position: relative;
-    top: -510px;
+    width: 50rem;
+    height: 30rem;
+    position: absolute;
+    top: 10.5rem;
+    right: 35rem;
 }
 #img2{
-    width: 841px;
-    height: 501px;
-    position: relative;
-    top: -1015px;
+    width: 50rem;
+    height: 30rem;
+    position: absolute;
+    top: 10.5rem;
+    right: 35rem;
 }
 #img3{
-    width: 841px;
-    height: 501px;
-    position: relative;
-    top: -1520px;
+    width: 50rem;
+    height: 30rem;
+    position: absolute;
+    top: 10.5rem;
+    right: 35rem;
+}
+#vid1{
+    width: 50rem;
+    height: 30rem;
+    position: absolute;
+    top: 10.5rem;
+    right: 35rem;
+    border: none;
+}
+#vid2{
+    width: 50rem;
+    height: 30rem;
+    position: absolute;
+    top: 10.5rem;
+    right: 35rem;
+    border: none;
+}
+#p1{
+    position: absolute;
+    top: 41rem;
+    right: 47rem;
+}
+#p2{
+    position: absolute;
+    top: 41rem;
+    right: 42rem;
+}
+#p3{
+    position: absolute;
+    top: 41rem;
+    right: 39rem;
+}
+#p4{
+    position: absolute;
+    top: 41rem;
+    right: 36rem;
+}
+#p5{
+    position: absolute;
+    top: 41rem;
+    right: 37.6rem;
 }
