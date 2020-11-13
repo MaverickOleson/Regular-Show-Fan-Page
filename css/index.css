@@ -2,7 +2,7 @@
     src: url(../fonts/Cartoon\ Slam.ttf);
     font-family: "Cartoon Slam";
 }
-#lightBody{
+#Body{
     background-image: url(../images/lightbackground.png);
     background-size: auto;
     text-align: center;
@@ -19,77 +19,84 @@ h2{
     position: relative;
     top: -0.5rem;
 }
+#darkMode{
+    width: 5.5rem;
+    height: 2.5rem;
+    position: relative;
+    top: -20rem;
+    right: -35rem;
+    background-color: black;
+    color: white;
+}
+#lightMode{
+    width: 5.5rem;
+    height: 2.5rem;
+    background-color: white;
+    color: black;
+}
 #Back{
     width: 7rem;
     height: 3rem;
-    grid-column: 1;
-    grid-row: 1;
-    align-self: center;
+    position: relative;
+    top: 14rem;
+    left: -28rem;
     background-color: white;
     border: 0.3rem solid black;
 }
 #darkBack{
     width: 7rem;
     height: 3rem;
-    position: absolute;
-    top: 24rem;
-    left: 24rem;
-    background-color:black;
+    position: relative;
+    top: 14rem;
+    left: -35rem;
+    background-color: black;
     border: 0.3rem solid white;
     color: white;
 }
 #Next{
     width: 7rem;
     height: 3rem;
-    grid-column: 3;
-    grid-row: 1;
-    align-self: center;
+    position: relative;
+    top: 14rem;
+    right: -35.5rem;
     background-color: white;
     border: 0.3rem solid black;
 }
 #darkNext{
     width: 7rem;
     height: 3rem;
-    position: absolute;
-    top: 24rem;
-    right: 24rem;
+    position: relative;
+    top: 14rem;
+    right: -35.5rem;
     background-color: black;
     border: 0.3rem solid white;
     color: white;
 }
 #Trivia{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 24rem;
-    right: 24rem;
+    width: 7rem;
+    height: 3rem;
+    position: relative;
+    top: 14rem;
+    right: -35.5rem;
     background-color: blue;
     border: 0.3rem solid black;
 }
 #darkTrivia{
     width: 7rem;
     height: 3rem;
-    position: absolute;
-    top: 24rem;
-    right: 24rem;
+    position: relative;
+    top: 14rem;
+    right: -35.5rem;
     background-color: black;
-    border: 0.3rem solid blue; 
+    border: 0.3rem solid blue;
     color: blue;
-}
-#container{
-    display: grid;
-    width: 76rem;
-    height: 31rem;
-    grid-template-columns: 7rem 50rem 7rem;
-    grid-row: 30rem;
-    column-gap: 6rem;
 }
 .img{
     width: 50rem;
     height: 30rem;
-    grid-column: 2;
-    grid-row: 1;
     border: 0.5rem solid black;
+    margin-left: auto;
+    margin-right: auto;
 }
 #img1{
     background-image: url(../images/Regular\ Show.jpg);
@@ -110,15 +117,24 @@ h2{
     visibility: hidden;
     width: 50rem;
     height: 30rem;
-    grid-column: 2;
-    grid-row: 1;
+    position: relative;
+    top: -4rem;
     border: 0.5rem solid black;
 }
 #vid2{
     visibility: hidden;
     width: 50rem;
     height: 30rem;
-    grid-column: 2;
-    grid-row: 1;
+    position: relative;
+    top: -4rem;
     border: 0.5rem solid black;
+}
+#pBox{
+    width: 51rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }

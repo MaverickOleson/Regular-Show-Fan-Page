@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fan Site</title>
+    <title>Regular Show Fan Site</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <center>
-        
-        <h1></h1>
-        <div id="container">
-            <button id="Back" onclick="back()"><h2>Back</h2></button>
-            <div class="img" id="img1"></div>
-            <iframe src = "https://www.youtube.com/watch?v=bHT3OYzWT98" id = "vid1"></iframe>
-            <iframe src = "https://www.youtube.com/watch?v=iSTUfJjtEOY" id = "vid2"></iframe>
-            <button id="Next" onclick="next()"><h2>Next</h2></button>
-        </div>
-        <p></p>
-    </center>
+    <h1></h1>
+    <div class="img" id="img1">
+        <button id="darkMode" onclick="darkMode()">Dark Mode</button>
+        <button id="Back" onclick="back()"><h2>Back</h2></button>
+        <button id="Next" onclick="next()"><h2>Next</h2></button>
+        <button id="Trivia" onclick="window.location.href='index.html(2)'"><h2>Trivia</h2></button>
+        <iframe src = "https://www.youtube.com/watch?v=bHT3OYzWT98" id = "vid1"></iframe>
+        <iframe src = "https://www.youtube.com/watch?v=iSTUfJjtEOY" id = "vid2"></iframe>
+    </div>
+    <div id="pBox"><p></p></div>
     <script src="js/index.js"></script>
 </body>
 </html>
