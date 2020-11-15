@@ -8,7 +8,7 @@ var answer15 = document.getElementById("answer15");
 
 var answer18 = document.getElementById("answer18");
 
-var p = document.getElementsByTagName("P")[1];
+var p = document.getElementsByTagName("P")[0];
 p.style.visibility = "hidden";
 
 var score = "0";
