@@ -8,7 +8,7 @@ var answer15 = document.getElementById("answer15");
 
 var answer18 = document.getElementById("answer18");
 
-var p = document.getElementsByTagName("P")[0];
+var p = document.getElementsByTagName("P")[1];
 p.style.visibility = "hidden";
 
 var score = "0";
@@ -16,9 +16,6 @@ var score = "0";
 function trivia(){
     if(answer4.checked){
         score++;
-    }
-    else{
-
     }
     if(answer5.checked){
         score++;
