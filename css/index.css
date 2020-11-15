@@ -19,36 +19,51 @@ h2{
     position: relative;
     top: -0.5rem;
 }
+#Layout{
+    display:grid;
+    grid-template-columns: 13rem 51rem 13rem;
+    grid-template-rows: 4rem 31rem auto;
+    justify-content: center;
+}
+h1{
+    grid-column: 2;
+    grid-row: 1;
+}
 #darkMode{
     width: 5.5rem;
     height: 2.5rem;
     position: relative;
-    top: -20rem;
-    right: -35rem;
+    top: 1rem;
+    left: 57rem;
     background-color: black;
+    font-family: Cartoon Slam;
     color: white;
 }
 #lightMode{
     width: 5.5rem;
     height: 2.5rem;
+    position: relative;
+    top: 1rem;
+    left: 57rem;
     background-color: white;
+    font-family: Cartoon Slam;
     color: black;
 }
 #Back{
     width: 7rem;
     height: 3rem;
-    position: relative;
-    top: 14rem;
-    left: -28rem;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
     background-color: white;
     border: 0.3rem solid black;
 }
 #darkBack{
     width: 7rem;
     height: 3rem;
-    position: relative;
-    top: 14rem;
-    left: -35rem;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
     background-color: black;
     border: 0.3rem solid white;
     color: white;
@@ -56,37 +71,41 @@ h2{
 #Next{
     width: 7rem;
     height: 3rem;
-    position: relative;
-    top: 14rem;
-    right: -35.5rem;
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    justify-self: end;
     background-color: white;
     border: 0.3rem solid black;
 }
 #darkNext{
     width: 7rem;
     height: 3rem;
-    position: relative;
-    top: 14rem;
-    right: -35.5rem;
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    justify-self: end;
     background-color: black;
     border: 0.3rem solid white;
     color: white;
 }
-#Trivia{
+#TriviaLight{
     width: 7rem;
     height: 3rem;
-    position: relative;
-    top: 14rem;
-    right: -35.5rem;
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    justify-self: end;
     background-color: blue;
     border: 0.3rem solid black;
 }
-#darkTrivia{
+#TriviaDark{
     width: 7rem;
     height: 3rem;
-    position: relative;
-    top: 14rem;
-    right: -35.5rem;
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    justify-self: end;
     background-color: black;
     border: 0.3rem solid blue;
     color: blue;
@@ -94,9 +113,16 @@ h2{
 .img{
     width: 50rem;
     height: 30rem;
+    grid-column: 2;
+    grid-row: 2;
     border: 0.5rem solid black;
-    margin-left: auto;
-    margin-right: auto;
+}
+.imgDark{
+    width: 50rem;
+    height: 30rem;
+    grid-column: 2;
+    grid-row: 2;
+    border: 0.5rem solid white;
 }
 #img1{
     background-image: url(../images/Regular\ Show.jpg);
@@ -117,24 +143,55 @@ h2{
     visibility: hidden;
     width: 50rem;
     height: 30rem;
-    position: relative;
-    top: -4rem;
+    grid-column: 2;
+    grid-row: 2;
     border: 0.5rem solid black;
+}
+#vid1Dark{
+    visibility: hidden;
+    width: 50rem;
+    height: 30rem;
+    grid-column: 2;
+    grid-row: 2;
+    border: 0.5rem solid white;
 }
 #vid2{
     visibility: hidden;
     width: 50rem;
     height: 30rem;
-    position: relative;
-    top: -4rem;
+    grid-column: 2;
+    grid-row: 2;
     border: 0.5rem solid black;
 }
+#vid2Dark{
+    visibility: hidden;
+    width: 50rem;
+    height: 30rem;
+    grid-column: 2;
+    grid-row: 2;
+    border: 0.5rem solid white;
+}
 #pBox{
-    width: 51rem;
-    height: auto;
     display: flex;
+    width: 50rem;
+    height: auto;
     flex-direction: row;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    grid-column: 2;
+    grid-row: 3;
+    background-color: white;
+    border: 0.5rem solid black;
+    border-top: none;
+}
+#pDarkBox{
+    display: flex;
+    width: 50rem;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    grid-column: 2;
+    grid-row: 3;
+    background-color: black;
+    border: 0.5rem solid white;
+    border-top: none;
 }

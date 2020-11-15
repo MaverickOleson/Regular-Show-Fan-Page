@@ -1,0 +1,39 @@
+@font-face{
+    src: url(../fonts/Cartoon\ Slam.ttf);
+    font-family: "Cartoon Slam";
+}
+#Body{
+    background-image: url(../images/lightbackground.png);
+    background-size: auto;
+    text-align: center;
+    font-family: Cartoon Slam;
+}
+h2{
+    position: relative;
+    top: -0.5rem;
+}
+#PageBack{
+    width: 7rem;
+    height: 3rem;
+    position: relative;
+    top: 12.96rem;
+    right: -35.5rem;
+    background-color: blue;
+    border: 0.3rem solid black;
+}
+div{
+    width: 45rem;
+    height: auto;
+    background-color: white;
+    border: 0.5rem solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Submit{
+    width: 6rem;
+    height: 2rem;
+    left: 19.8rem;
+    background-color: white;
+    border: 0.2rem solid black;
+    font-family: Cartoon Slam;
+}

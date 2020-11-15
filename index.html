@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <h1></h1>
-    <div class="img" id="img1">
-        <button id="darkMode" onclick="darkMode()">Dark Mode</button>
-        <button id="Back" onclick="back()"><h2>Back</h2></button>
-        <button id="Next" onclick="next()"><h2>Next</h2></button>
-        <button id="Trivia" onclick="window.location.href='index.html(2)'"><h2>Trivia</h2></button>
+    <div id="Layout">
+        <button type="submit" id="darkMode" onclick="darkMode()">Dark Mode</button>
+        <h1></h1>
+        <div class="img" id="img1"></div>
         <iframe src = "https://www.youtube.com/watch?v=bHT3OYzWT98" id = "vid1"></iframe>
         <iframe src = "https://www.youtube.com/watch?v=iSTUfJjtEOY" id = "vid2"></iframe>
+        <button id="Back" onclick="back()"><h2>Back</h2></button>
+        <button id="Next" onclick="next()"><h2>Next</h2></button>
+        <button id="TriviaLight" onclick="window.location.href='TriviaLight.html'"><h2>Trivia</h2></button>
+        <button id="TriviaDark" onclick="window.location.href='TriviaDark.html'"><h2>Trivia</h2></button>
+        <div id="pBox"><p></p></div>
     </div>
-    <div id="pBox"><p></p></div>
     <script src="js/index.js"></script>
 </body>
 </html>
